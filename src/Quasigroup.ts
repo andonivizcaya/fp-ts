@@ -188,7 +188,7 @@ export const leftInvAll =
  *
  * @since 2.11.0
  */
-export const rightInv =
+export const rightInvAll =
   <A>(Q: Quasigroup<A>) =>
   (startWith: A) =>
   (as: ReadonlyArray<A>): A =>
