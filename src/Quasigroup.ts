@@ -179,10 +179,10 @@ export const leftInvAll =
  * If `as` is empty, return the provided `startWith` value.
  *
  * @example
- * import { rightInv } from 'fp-ts/Quasigroup'
+ * import { rightInvAll } from 'fp-ts/Quasigroup'
  * import * as N from 'fp-ts/number'
  *
- * const subAll = rightInv(Q.Quasigroup)(0)
+ * const subAll = rightInvAll(Q.Quasigroup)(0)
  *
  * assert.deepStrictEqual(subAll([1, 2, 3]), -6)
  *
