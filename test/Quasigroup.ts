@@ -19,7 +19,7 @@ describe('Quasigroup', () => {
       N.Quasigroup,
       _.filterFirst((n) => n >= 0)
     )
-    const sum = _.concatAll(M)(0)
+    const sum = _.concatAll(Q)(0)
     U.deepStrictEqual(sum([1, -2, 3]), 3)
   })
 
@@ -28,13 +28,13 @@ describe('Quasigroup', () => {
       N.Quasigroup,
       _.filterSecond((n) => n >= 0)
     )
-    const sum = _.concatAll(M)(0)
+    const sum = _.concatAll(Q)(0)
     U.deepStrictEqual(sum([1, -2, 3]), 4)
   })
 
   it('endo', () => {
-    const Qg = pipe(N.Quasigroup, _.endo(increment))
-    const sum = _.concatAll(Qg)(0)
+    const Q = pipe(N.Quasigroup, _.endo(increment))
+    const sum = _.concatAll(Q)(0)
     U.deepStrictEqual(sum([1, -2, 3]), 8)
   })
 
